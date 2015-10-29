@@ -22,7 +22,6 @@ public class BubbleSort implements SortingAlgorithm {
 
     @Override
     public void sort() {
-        //TODO: Implement bubble sort
         List<Integer> unsorted = mList;
 
         for (int i = 0; i < unsorted.size() - 1; i++) {

@@ -1,31 +1,43 @@
 package com.everlesslycoding;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by emilyperegrine on 29/10/2015.
  */
 public class SortingData {
-    List<String> mBeforeList;
-    List<String> mAfterList;
+    List<Integer> mBeforeList;
+    List<Integer> mAfterList;
 
     int comparisons;
     int swaps;
 
-    public List<String> getBeforeList() {
+
+    @Override
+    public String toString() {
+        return "SortingData{" +
+                "BeforeList=" + mBeforeList +
+                ", AfterList=" + mAfterList +
+                ", comparisons=" + comparisons +
+                ", swaps=" + swaps +
+                '}';
+    }
+
+    public List<Integer> getBeforeList() {
         return mBeforeList;
     }
 
-    public void setBeforeList(List<String> beforeList) {
-        mBeforeList = beforeList;
+    public void setBeforeList(List<Integer> beforeList) {
+        mBeforeList = new ArrayList<>(beforeList);
     }
 
-    public List<String> getAfterList() {
+    public List<Integer> getAfterList() {
         return mAfterList;
     }
 
-    public void setAfterList(List<String> afterList) {
-        mAfterList = afterList;
+    public void setAfterList(List<Integer> afterList) {
+        mAfterList = new ArrayList<>(afterList);
     }
 
     public int getComparisons() {

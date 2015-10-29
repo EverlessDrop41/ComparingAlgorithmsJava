@@ -11,6 +11,10 @@ public class BubbleSort implements SortingAlgorithm {
 
     private List<Integer> mList;
 
+    BubbleSort(List<Integer> list){
+        mList = list;
+    }
+
     @Override
     public void setList(List<Integer> list) {
         mList = list;
@@ -23,8 +27,9 @@ public class BubbleSort implements SortingAlgorithm {
 
         for (int i = 0; i < unsorted.size() - 1; i++) {
             for (int j = 0; j < unsorted.size() - 1; j++) {
-                if (unsorted.get(j) > unsorted.get(j - 1)) {
-                    Collections.swap(unsorted, j, j - 1);
+
+                if (unsorted.get(j) > unsorted.get(j + 1)) {
+                    Collections.swap(unsorted, j, j + 1);
                 }
             }
         }

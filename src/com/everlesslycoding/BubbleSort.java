@@ -1,5 +1,7 @@
 package com.everlesslycoding;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -17,7 +19,19 @@ public class BubbleSort implements SortingAlgorithm {
     @Override
     public void sort() {
         //TODO: Implement bubble sort
+        List<Integer> unsorted = mList;
+
+        for (int i = 0; i < unsorted.size() - 1; i++) {
+            for (int j = 0; j < unsorted.size() - 1; j++) {
+                if (unsorted.get(j) > unsorted.get(j - 1)) {
+                    Collections.swap(unsorted, j, j - 1);
+                }
+            }
+        }
+
+        mList = unsorted;
     }
+
 
     @Override
     public void printList(String pre) {

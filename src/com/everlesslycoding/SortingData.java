@@ -10,8 +10,8 @@ public class SortingData {
     List<Integer> mBeforeList;
     List<Integer> mAfterList;
 
-    int comparisons;
-    int swaps;
+    int mComparisons;
+    int mSwaps;
 
 
     @Override
@@ -19,8 +19,8 @@ public class SortingData {
         return "SortingData{" +
                 "BeforeList=" + mBeforeList +
                 ", AfterList=" + mAfterList +
-                ", comparisons=" + comparisons +
-                ", swaps=" + swaps +
+                ", mComparisons=" + mComparisons +
+                ", mSwaps=" + mSwaps +
                 '}';
     }
 
@@ -41,26 +41,26 @@ public class SortingData {
     }
 
     public int getComparisons() {
-        return comparisons;
+        return mComparisons;
     }
 
-    public void setComparisons(int comparisons) {
-        this.comparisons = comparisons;
+    public void setComparisons(int comparis) {
+        this.mComparisons = comparis;
     }
 
     public void incrementComparisons() {
-        this.comparisons++;
+        this.mComparisons++;
     }
 
     public int getSwaps() {
-        return swaps;
+        return mSwaps;
     }
 
     public void setSwaps(int swaps) {
-        this.swaps = swaps;
+        this.mSwaps = swaps;
     }
 
     public void incrementSwaps() {
-        this.swaps++;
+        this.mSwaps++;
     }
 }

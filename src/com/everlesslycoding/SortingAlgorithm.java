@@ -7,7 +7,10 @@ import java.util.List;
  */
 public interface SortingAlgorithm {
     public void setList(List<Integer> list);
+
     public void sort();
+
     public void printList(String pre);
+
     public void printSort();
 }

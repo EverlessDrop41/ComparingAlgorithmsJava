@@ -12,7 +12,7 @@ public class BubbleSort implements SortingAlgorithm {
     private List<Integer> mList;
     SortingData mSortingData;
 
-    BubbleSort(List<Integer> list){
+    BubbleSort(List<Integer> list) {
         mList = list;
         mSortingData = new SortingData();
     }
